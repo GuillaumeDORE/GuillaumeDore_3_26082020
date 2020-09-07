@@ -5,35 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OHMYFOOD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
     <link href="sass/style.css" rel="stylesheet" />
 </head>
 
-<body>
-    <header>
+<body class="main">
+    <header class="header">
         <!-- logo -->
         <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header_logo" />
     </header>
 
-    <section>
-        <!-- localisation -->
-        <img src="images/icon/pin.svg" alt="logo de pin" />
-        <p>Paris, Belleville</p>
+    <section class="homepage">
+        <section class="homepage_loc">
+            <!-- localisation -->
+            <img src="images/icon/pin.svg" alt="logo de pin" />
+            <p>Paris, Belleville</p>
+        </section>
+        <section class="homepage_intro">
+            <!-- introduction -->
+            <h1>Book the menu you like</h1>
+            <p>Discover top-of-the-art restaurants we picked for you</p>
+            <button type="button" class="button"> Explore our restaurants</button>
+        </section>
     </section>
-    <section>
-        <!-- introduction -->
-        <h1>Book the menu you like</h1>
-        <p>Discover top-of-the-art restaurants we pickef for you</p>
-        <button type="button"> Explore our restaurants</button>
+
+    <section class="explication">    
         <h2>How it works</h2>
-        <ol>
-            <li><img src="images/icon/telephone.svg" alt="logo de téléphone" />Chose a restaurant</li>
-            <li><img src="images/icon/menu.svg" alt="logo de menu" />Create your menu</li>
-            <li><img src="images/icon/boutique.svg" alt="logo de boutique" />Go enjoy it at the restaurant</li>
+        <ol class="explication-list">
+            <li class="explication-list_ligne"><p class="explication_number">1</p><img src="images/icon/telephone.svg" alt="logo de téléphone" />Chose a restaurant</li>
+            <li class="explication-list_ligne"><p class="explication_number">2</p><img src="images/icon/menu.svg" alt="logo de menu" />Create your menu</li>
+            <li class="explication-list_ligne explication-list_ligne--last"><p class="explication_number">3</p><img src="images/icon/boutique.svg" alt="logo de boutique" />Go enjoy it at the restaurant</li>
 
         </ol>
     </section>
 
-    <section>
+    <section class="vignette">
         <!-- menu -->
         <h2>Restaurants</h2>
 
@@ -89,9 +95,9 @@
         </article>
     </section>
 
-    <footer>
+    <footer class="footer">
         <!-- footer -->
-        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="footer_logo" />
+        <img src="images/logo/ohmyfood-footer.svg" alt="logo ohmyfood" class="footer_logo" />
         <p><img src="images/icon/couverts.svg" alt="logo de couverts" /> Suggest a restaurant</p>
         <p><img src="images/icon/handshake.svg" alt="logo de serrage de mains" /> Become a partner</p>
         <p>Legal</p>

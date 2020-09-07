@@ -9,18 +9,19 @@
 
 </head>
 
-<body>
-    <header class="header-menu">
+<body class="main">
+    <header class="header">
         <!-- logo -->
-        <a href="../index.html"><img src="../images/icon/goback.svg" alt="logo Fleche vers la gauche" /> </a>
-        <img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header_logo" />
-        <img class="header-menu_photo" src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-            alt="photo restaurant Le Gourmand" />
+        <p><a href="../index.html" class="header_icon"><img src="../images/icon/goback.svg" alt="logo Fleche vers la gauche"/> </a></p>
+        <p><img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header_logo" /></p>
+        <p></p>
     </header>
 
     <section class="menu">
 
         <div class="menu-head">
+            <img class="header-menu_photo" src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="photo restaurant Le Gourmand" />
             <h2 class="menu_title">Bastille</h2>
             <img src="../images/icon/coeur.svg" alt="logo de coeur" />
         </div>
@@ -29,9 +30,16 @@
             <h3>Entrees</h3>
             <ul>
                 <li class="menu_plat">
-                    <h4 class="menu_plat-name">Citrus Squid Carpaccio</h4>
-                    <p class="menu_plat-description">with orange zest</p>
-                    <p class="menu_plat-price">25€</p>
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Citrus Squid Carpaccio</h4>
+                        <div class="menu_ligne-2">
+                            <p class="menu_plat-description">with orange zest</p>
+                            <p class="menu_plat-price">25€</p>
+                        </div>
+                    </article>
+                    <div class="menu_coche">
+                        <p><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
                 </li>
                 <li class="menu_plat">
                     <h4 class="menu_plat-name">Citrus Squid Carpaccio</h4>
@@ -89,9 +97,9 @@
         </article>
         <button>Order</button>
     </section>
-    <footer>
+    <footer class="footer">
         <!-- footer -->
-        <img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="footer_logo" />
+        <img src="../images/logo/ohmyfood-footer.svg" alt="logo ohmyfood" class="footer_logo" />
         <p><img src="../images/icon/couverts.svg" alt="logo de couverts" /> Suggest a restaurant</p>
         <p><img src="../images/icon/handshake.svg" alt="logo de serrage de mains" /> Become a partner</p>
         <p>Legal</p>
