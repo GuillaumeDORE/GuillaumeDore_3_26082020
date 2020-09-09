@@ -1,66 +1,65 @@
-
 // font-family: 'Roboto', sans-serif;
 
 // font-family: 'Shrikhand', cursive;
 
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiare: #99E2D0;
-$bg-white:#f6f6f6;
-
+$primaire: #9356dc;
+$secondaire: #ff79da;
+$tertiare: #99e2d0;
+$bg-white: #f6f6f6;
 
 @import "./2.vendors/normalize";
 
-.main{
+.main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Roboto', sans-serif;   
+    font-family: "Roboto", sans-serif;
 }
 
-.header{
-    width: 100%;
+.header {
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1rem 1rem 1rem;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2) ; 
+    padding: 1.5rem 5% 1rem 5%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 
-.homepage{
+.homepage {
     text-align: center;
     width: 100%;
     z-index: 1;
-    &_loc{
+    &_loc {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.75rem  0;
+        padding: 0.75rem 0;
         background-color: #eaeaea;
-        & img{
+        & img {
             margin-right: 0.5rem;
         }
     }
-    &_intro{
+    &_intro {
         background-color: $bg-white;
-       & h1{
-           font-weight: 600;
-           font-size: 1.5rem;
-           padding: 2rem 0;
-       } 
-       & p{
-           letter-spacing: 0.05rem;
-           margin: 0 10%;
-           font-weight: 300;
-       }
-       & button{
-           margin: 2rem 0 3rem 0;
-           background-image: linear-gradient(170deg, $secondaire, $primaire);
-       }
+        & h1 {
+            font-weight: 600;
+            font-size: 1.5rem;
+            padding: 2rem 0;
+        }
+        & p {
+            letter-spacing: 0.05rem;
+            margin: 0 10%;
+            font-weight: 300;
+        }
+        & button {
+            margin: 2rem 0 3rem 0;
+            background-image: linear-gradient(170deg, $secondaire, $primaire);
+        }
     }
 }
-.button{
+.button {
     padding: 1rem 1.5rem;
     color: white;
     border-radius: 5rem;
@@ -70,19 +69,19 @@ $bg-white:#f6f6f6;
     letter-spacing: 0.02rem;
 }
 
-.explication{
+.explication {
     width: 100%;
     margin-top: 3rem;
     font-weight: 500;
-    & h2{
+    & h2 {
         font-weight: 600;
         font-size: 1.5rem;
         padding-left: 5%;
     }
-    &-list{
+    &-list {
         margin: 2rem 1rem 4rem 1rem;
-        
-        &_ligne{
+
+        &_ligne {
             margin: 1rem;
             padding: 1.5rem 2rem;
             background-color: $bg-white;
@@ -92,15 +91,15 @@ $bg-white:#f6f6f6;
             justify-content: row;
             align-items: center;
             position: relative;
-            & img{
+            & img {
                 padding: 0 1rem 0 0;
             }
-            &--last{
-                background-color: #f5edff; 
+            &--last {
+                background-color: #f5edff;
             }
         }
     }
-    &_number{
+    &_number {
         font-size: 0.8rem;
         color: white;
         background-color: $primaire;
@@ -116,44 +115,65 @@ $bg-white:#f6f6f6;
     }
 }
 
-.vignette{
-    margin: 2rem 0 2rem 0 ;
+.vignette {
+    padding: 2rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    & h2{
+    background-color: $bg-white;
+
+    & h2 {
         font-weight: 600;
         font-size: 1.5rem;
         padding-left: 5%;
         margin: 1rem 0 1rem 0;
         align-self: start;
     }
-    &-restaurant{
+    &-restaurant {
         width: 90%;
-
+        border-radius: 1rem;
+        background-color: white;
+        margin: 5% 0;
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075);
+        &_photo {
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+            // object-fit: cover;
+            // object-position: bottom;
+            // height: 66%;
+            //  ----------------------- Chercher solution pour crop le haut de l'image 
+        }
+        &_description {
+            display: flex;
+            padding: 1rem;
+            justify-content: space-between;
+            &-left {
+                & h3 {
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    padding-bottom: 0.5rem;
+                }
+                & p {
+                    font-weight: 300;
+                }
+            }
+        }
     }
 }
 
 
-
-
-
-
-
-
-
-.vignette-restaurant_photo {
-    width: 100%;
-}
-.header-menu_photo{
-    width: 100%;
-}
-.footer{
+.footer {
     background-color: #353535;
     color: white;
     width: 100%;
-    &_logo{
-       fill: white;;
+    &_logo {
+        fill: white;
     }
+}
+
+
+
+.header-menu_photo {
+    width: 100%;
 }

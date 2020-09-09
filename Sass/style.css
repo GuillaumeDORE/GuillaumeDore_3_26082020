@@ -399,6 +399,7 @@ table {
 }
 
 .main {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,20 +410,21 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 1.5rem 5% 1rem 5%;
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   z-index: 2;
@@ -444,7 +446,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.75rem  0;
+  padding: 0.75rem 0;
   background-color: #eaeaea;
 }
 
@@ -470,7 +472,7 @@ table {
 
 .homepage_intro button {
   margin: 2rem 0 3rem 0;
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
 }
 
 .button {
@@ -530,7 +532,7 @@ table {
 .explication_number {
   font-size: 0.8rem;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
   padding: 0.25rem;
   border-radius: 10rem;
   width: 1rem;
@@ -549,7 +551,7 @@ table {
 }
 
 .vignette {
-  margin: 2rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,6 +565,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f6f6f6;
 }
 
 .vignette h2 {
@@ -577,14 +580,36 @@ table {
 
 .vignette-restaurant {
   width: 90%;
+  border-radius: 1rem;
+  background-color: white;
+  margin: 5% 0;
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075);
 }
 
 .vignette-restaurant_photo {
   width: 100%;
+  border-radius: 1rem 1rem 0 0;
 }
 
-.header-menu_photo {
-  width: 100%;
+.vignette-restaurant_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vignette-restaurant_description-left h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.vignette-restaurant_description-left p {
+  font-weight: 300;
 }
 
 .footer {
@@ -595,5 +620,9 @@ table {
 
 .footer_logo {
   fill: white;
+}
+
+.header-menu_photo {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
