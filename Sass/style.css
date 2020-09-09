@@ -615,11 +615,24 @@ table {
 .footer {
   background-color: #353535;
   color: white;
-  width: 100%;
+  width: 90%;
+  padding: 5%;
 }
 
 .footer_logo {
   fill: white;
+  height: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.footer_icon {
+  height: 1rem;
+  padding-right: 0.25rem;
+}
+
+.footer_p {
+  font-weight: 300;
+  padding: 0.25rem 0;
 }
 
 .header-menu_photo {
