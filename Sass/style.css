@@ -504,7 +504,7 @@ table {
 
 .explication-list_ligne {
   margin: 1rem;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
   background-color: #f6f6f6;
   border-radius: 1rem;
   -webkit-box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -518,7 +518,6 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .explication-list_ligne img {
@@ -527,6 +526,10 @@ table {
 
 .explication-list_ligne--last {
   background-color: #f5edff;
+}
+
+.explication-list_ligne--last img {
+  width: 1.5rem;
 }
 
 .explication_number {
@@ -546,8 +549,8 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  translate: -2.5rem;
+  -webkit-transform: translateX(-1.5rem);
+          transform: translateX(-1.5rem);
 }
 
 .vignette {
@@ -566,6 +569,7 @@ table {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f6f6f6;
+  width: 100%;
 }
 
 .vignette h2 {

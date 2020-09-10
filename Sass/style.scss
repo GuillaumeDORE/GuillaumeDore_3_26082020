@@ -83,19 +83,21 @@ $bg-white: #f6f6f6;
 
         &_ligne {
             margin: 1rem;
-            padding: 1.5rem 2rem;
+            padding: 1.5rem 1rem;
             background-color: $bg-white;
             border-radius: 1rem;
             box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: row;
             align-items: center;
-            position: relative;
             & img {
                 padding: 0 1rem 0 0;
             }
             &--last {
                 background-color: #f5edff;
+                & img{
+                    width: 1.5rem;
+                }
             }
         }
     }
@@ -110,8 +112,7 @@ $bg-white: #f6f6f6;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        translate: -2.5rem;
+        transform: translateX(-1.5rem);
     }
 }
 
@@ -122,6 +123,7 @@ $bg-white: #f6f6f6;
     justify-content: center;
     align-items: center;
     background-color: $bg-white;
+    width: 100%;
 
     & h2 {
         font-weight: 600;
