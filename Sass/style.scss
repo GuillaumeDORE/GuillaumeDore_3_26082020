@@ -95,7 +95,7 @@ $bg-white: #f6f6f6;
             }
             &--last {
                 background-color: #f5edff;
-                & img{
+                & img {
                     width: 1.5rem;
                 }
             }
@@ -138,13 +138,26 @@ $bg-white: #f6f6f6;
         background-color: white;
         margin: 5% 0;
         box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075);
+        position: relative;
         &_photo {
             width: 100%;
             border-radius: 1rem 1rem 0 0;
             // object-fit: cover;
             // object-position: bottom;
             // height: 66%;
-            //  ----------------------- Chercher solution pour crop le haut de l'image 
+            //  ----------------------- Chercher solution pour crop le haut de l'image
+        }
+        &_new {
+            color: #139273;
+            background-color: $tertiare;
+            font-weight: 500;
+            width: 4rem;
+            text-align: center;
+            padding: 0.5rem 0.85rem;
+            border-radius: 0.2rem;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
         }
         &_description {
             display: flex;
@@ -164,7 +177,6 @@ $bg-white: #f6f6f6;
     }
 }
 
-
 .footer {
     background-color: #353535;
     color: white;
@@ -175,17 +187,15 @@ $bg-white: #f6f6f6;
         height: 1.2rem;
         padding-bottom: 1rem;
     }
-    &_icon{
+    &_icon {
         height: 1rem;
         padding-right: 0.25rem;
     }
-    &_p{
+    &_p {
         font-weight: 300;
         padding: 0.25rem 0;
     }
 }
-
-
 
 .header-menu_photo {
     width: 100%;
