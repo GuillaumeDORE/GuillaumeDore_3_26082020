@@ -431,11 +431,61 @@ table {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin: 2rem 0 5rem 0;
+  margin: 2rem 0;
 }
 
 .heart {
   fill: #9356dc;
+}
+
+.menu_plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.menu_plat-gauche {
+  width: 100%;
+}
+
+.menu_plat h4 {
+  font-weight: 500;
+  font-size: 1.15rem;
+  padding-bottom: 0.5rem;
+}
+
+.menu_plat-ligne-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_plat-description {
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+
+.menu_plat-price {
+  font-weight: 500;
+}
+
+.menu_plat-coche {
+  display: none;
 }
 
 .header {
@@ -666,8 +716,16 @@ table {
   font-weight: 300;
 }
 
+.header {
+  background-color: #fff;
+}
+
 .header-menu_photo {
   width: 100%;
+}
+
+.main-menu {
+  background-color: #f6f6f6;
 }
 
 .menu {

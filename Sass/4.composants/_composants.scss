@@ -11,11 +11,45 @@
         width: 50%;
         min-width: 7rem;
         align-self: center;
-        margin: 2rem 0 5rem 0;
+        margin: 2rem 0;
     }
 }
 
 
 .heart{
     fill: $primaire;
+}
+
+// vignette de plat d'un menu 
+.menu_plat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    &-gauche{
+        width: 100%;
+    }
+    & h4{
+        font-weight: 500;
+        font-size: 1.15rem;
+        padding-bottom: 0.5rem;
+    }
+    &-ligne-2{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-description{
+        font-weight: 300;
+        font-size: 0.95rem;
+    }
+    &-price{
+        font-weight: 500;
+    }
+    &-coche{
+        display: none;
+    }
 }
