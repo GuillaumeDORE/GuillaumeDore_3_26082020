@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Gourmand</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link href="../sass/style.css" rel="stylesheet" />
 
 </head>
@@ -12,22 +15,25 @@
 <body class="main">
     <header class="header">
         <!-- logo -->
-        <p><a href="../index.html" class="header_icon"><img src="../images/icon/goback.svg" alt="logo Fleche vers la gauche"/> </a></p>
+        <p><a href="../index.html" class="header_icon"><img src="../images/icon/goback.svg"
+                    alt="logo Fleche vers la gauche" /> </a></p>
         <p><img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header_logo" /></p>
         <p></p>
     </header>
-
+    <section>
+        <img class="header-menu_photo"
+                src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="photo restaurant Le Gourmand" />
+    </section>
     <section class="menu">
 
         <div class="menu-head">
-            <img class="header-menu_photo" src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-            alt="photo restaurant Le Gourmand" />
             <h2 class="menu_title">Bastille</h2>
             <img src="../images/icon/coeur.svg" alt="logo de coeur" />
         </div>
 
         <article class="menu_service">
-            <h3>Entrees</h3>
+            <h3 class="menu_service-title">Entrees</h3>
             <ul>
                 <li class="menu_plat">
                     <article class="menu_plat-gauche">
@@ -55,7 +61,7 @@
         </article>
 
         <article class="menu_service">
-            <h3>Main dish</h3>
+            <h3 class="menu_service-title">Main dish</h3>
             <ul>
                 <li class="menu_plat">
                     <h4 class="menu_plat-name">Citrus Squid Carpaccio</h4>
@@ -76,7 +82,7 @@
         </article>
 
         <article class="menu_service">
-            <h3>Desserts</h3>
+            <h3 class="menu_service-title">Desserts</h3>
             <ul>
                 <li class="menu_plat">
                     <h4 class="menu_plat-name">Citrus Squid Carpaccio</h4>
@@ -95,7 +101,7 @@
                 </li>
             </ul>
         </article>
-        <button>Order</button>
+        <button class="button button-menu">Order</button>
     </section>
     <footer class="footer">
         <!-- footer -->

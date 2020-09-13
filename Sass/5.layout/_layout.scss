@@ -1,0 +1,28 @@
+.header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5% 1rem 5%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+.footer {
+    background-color: #353535;
+    color: white;
+    width: 90%;
+    padding: 5%;
+    &_logo {
+        fill: white;
+        height: 1.2rem;
+        padding-bottom: 1rem;
+    }
+    &_icon {
+        height: 1rem;
+        padding-right: 0.25rem;
+    }
+    &_p {
+        font-weight: 300;
+        padding: 0.25rem 0;
+    }
+}
