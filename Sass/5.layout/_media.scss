@@ -1,0 +1,40 @@
+
+@media screen and (min-width:650px) {
+    .vignette {
+        & h2{
+            align-self: center;
+            font-size: 2rem;
+            padding-left: 0;
+        }
+        &-wrap{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+        &-restaurant{
+            width: 16rem;
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem 5%;
+        &_logo{
+            height: 1.5rem;
+            padding-bottom: unset;
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    .header_logo{
+        height: 4rem;
+    }
+    .vignette {
+        &-restaurant{
+            width: 30rem;
+        }
+    } 
+}

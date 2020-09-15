@@ -32,6 +32,7 @@
 
 .explication {
     width: 100%;
+    max-width: 660px;
     margin-top: 3rem;
     font-weight: 500;
     & h2 {
@@ -94,10 +95,10 @@
         align-self: start;
     }
     &-restaurant {
-        width: 90%;
+        // width: 90%;
         border-radius: 1rem;
         background-color: white;
-        margin: 5% 0;
+        margin: 5% 5%;
         box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075);
         position: relative;
         &_photo {

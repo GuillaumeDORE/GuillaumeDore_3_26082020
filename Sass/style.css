@@ -574,6 +574,7 @@ table {
 
 .explication {
   width: 100%;
+  max-width: 660px;
   margin-top: 3rem;
   font-weight: 500;
 }
@@ -669,10 +670,9 @@ table {
 }
 
 .vignette-restaurant {
-  width: 90%;
   border-radius: 1rem;
   background-color: white;
-  margin: 5% 0;
+  margin: 5% 5%;
   -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075);
           box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075);
   position: relative;
@@ -774,5 +774,61 @@ table {
   background-color: #99e2d0;
   position: absolute;
   bottom: -0.5rem;
+}
+
+@media screen and (min-width: 650px) {
+  .vignette h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 2rem;
+    padding-left: 0;
+  }
+  .vignette-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .vignette-restaurant {
+    width: 16rem;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 5%;
+  }
+  .footer_logo {
+    height: 1.5rem;
+    padding-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header_logo {
+    height: 4rem;
+  }
+  .vignette-restaurant {
+    width: 30rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
