@@ -8,6 +8,7 @@
     letter-spacing: 0.02rem;    
     background-image: linear-gradient(170deg, $secondaire, $primaire);
     transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    cursor: pointer;
     &-menu{
         width: 50%;
         min-width: 7rem;
@@ -23,14 +24,19 @@
 
 
 .heart{
+    cursor: pointer;
     position: relative;
+    display: flex;
+    height: 21px;
     &:hover{
         & .heart--select{
             opacity: 1;
             animation: heart-fill 400ms ease-in-out;
+            transform-origin: bottom;
         }
     }
     &--select{
+        display: flex;
         position: absolute;
         top: 0;
         right: 0;
@@ -51,18 +57,24 @@
 }
 
 
+$anim-dur: 800ms;
+$num-menu:9;
+$anim-delay: $anim-dur / $num-menu;
 // vignette de plat d'un menu 
 .menu_plat{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #fff;
     margin: 1rem 0;
-    padding: 0.75rem;
     border-radius: 1rem;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    // line-break: strict;
+    // text-overflow: ellipsis;--------------je n'arrive pas a faire les pointillés
+    
     &-gauche{
         width: 100%;
+        padding: 0.75rem;
     }
     & h4{
         font-weight: 500;
@@ -79,8 +91,42 @@
     }
     &-price{
         font-weight: 500;
+        transform: translateX(3.5rem);
+
     }
     &-coche{
-        display: none;
+        transform: translateX(5rem);/*------------------ le prix ne bouge pas */
+        background-color: $tertiare;
+        width: 5rem;
+        display: flex;
+        justify-content: center;
+        & p{
+            margin: auto;
+        }
+    }
+    &:hover > .menu_plat-coche{
+        transform: translateX(0);/*----------------ne fonctionne pas*/
+    }
+    &:hover  .menu_plat-price{
+        transform: translateX(0);/*----------------ne fonctionne pas*/
+    }
+
+
+    /*animation apparition plat*/
+    animation: apparition-plat $anim-dur backwards ;
+    @for $i from 1 through $num-menu{
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
+}
+@keyframes apparition-plat{
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

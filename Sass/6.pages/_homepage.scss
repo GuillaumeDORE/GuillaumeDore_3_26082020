@@ -95,7 +95,6 @@
         align-self: start;
     }
     &-restaurant {
-        // width: 90%;
         border-radius: 1rem;
         background-color: white;
         margin: 5% 5%;
@@ -121,6 +120,7 @@
             display: flex;
             padding: 1rem;
             justify-content: space-between;
+            align-items: center;
             &-left {
                 & h3 {
                     font-weight: 600;

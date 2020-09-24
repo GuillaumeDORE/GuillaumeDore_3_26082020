@@ -13,7 +13,8 @@
     flex-direction: column;
     background-color: $bg-white;
     transform: translateY(-2rem);
-    border-radius: 2rem;
+    border-radius: 2rem;    
+    max-width: 660px;
     &-head{
         padding: 2rem 5%;
         display: flex;
@@ -23,12 +24,16 @@
         font-weight: 500;
     }
     &_service{
+        & ul{
+            margin-bottom: 2rem;
+        }
         padding: 0 5%;
         &-title{
             text-transform: uppercase;
             font-weight: 300;
             position: relative;
             margin-bottom: 1rem;
+            animation: apparition-plat $anim-dur backwards ;
             &::before{
                 content:'' ;
                 width: 2.5rem;
