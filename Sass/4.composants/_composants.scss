@@ -56,10 +56,6 @@
     }
 }
 
-
-$anim-dur: 800ms;
-$num-menu:9;
-$anim-delay: $anim-dur / $num-menu;
 // vignette de plat d'un menu 
 .menu_plat{
     display: flex;
@@ -91,27 +87,35 @@ $anim-delay: $anim-dur / $num-menu;
     }
     &-price{
         font-weight: 500;
-        transform: translateX(3.5rem);
+        transform: translateX(3.5rem);        
+        transition: transform 400ms ease-in-out ;
 
     }
     &-coche{
-        transform: translateX(5rem);/*------------------ le prix ne bouge pas */
+        transform: translateX(5rem);
         background-color: $tertiare;
         width: 5rem;
         display: flex;
         justify-content: center;
+        transition: transform 400ms ease-in-out ;
         & p{
             margin: auto;
         }
     }
+    &-logocoche{
+        transform: rotate(-360deg);        
+        transition: transform 400ms ease-out ;
+    }
+    /*Animation logo coche*/
     &:hover > .menu_plat-coche{
-        transform: translateX(0);/*----------------ne fonctionne pas*/
+        transform: translateX(0);
     }
     &:hover  .menu_plat-price{
-        transform: translateX(0);/*----------------ne fonctionne pas*/
+        transform: translateX(0);
     }
-
-
+    &:hover  .menu_plat-logocoche{
+        transform: rotate(0);
+    }
     /*animation apparition plat*/
     animation: apparition-plat $anim-dur backwards ;
     @for $i from 1 through $num-menu{
