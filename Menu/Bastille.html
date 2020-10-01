@@ -4,13 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bastille</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link href="../sass/style.css" rel="stylesheet" />
+
 </head>
-<body>
-    <header>
+
+<body class="main main-menu">
+    <header class="header">
         <!-- logo -->
-        <a href="../index.html"><img src="#" alt="logo Fleche vers la gauche"/> </a>
-        <img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header_logo"/>
+        <p><a href="../index.html" class="header_icon"><img src="../images/icon/goback.svg"
+                    alt="logo Fleche vers la gauche" /> </a></p>
+        <p><img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header_logo" /></p>
+        <p></p>
     </header>
-    
+    <section>
+        <img class="header-menu_photo"
+                src="../images/restaurants/bastille.jpg"
+                alt="photo restaurant Bastille" />
+    </section>
+    <section class="menu">
+
+        <div class="menu-head">
+            <h2 class="menu_title">Bastille</h2>
+            <div class="heart">
+                <img src="../images/icon/coeur.svg" alt="logo de coeur" />
+                <div class="heart--select"><img src="../images/icon/coeur-grad.svg" alt="logo de coeur dégradé" /></div>
+            </div>
+        </div>
+
+        <article class="menu_service">
+            <h3 class="menu_service-title">Entrees</h3>
+            <ul>
+                <li class="menu_plat menu_plat--1">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Citrus Squid Carpaccio</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">with orange zest </p>
+                            <p class="menu_plat-price">25€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+                <li class="menu_plat menu_plat--2">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Grandmother's Vegetable Soup</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">Carrots, parsnips, Jerusalem artichoke</p>
+                            <p class="menu_plat-price">35€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+                <li class="menu_plat menu_plat--3">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Onion Soup</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">Revisted</p>
+                            <p class="menu_plat-price">25€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+
+        <article class="menu_service">
+            <h3 class="menu_service-title">Main dish</h3>
+            <ul>
+                <li class="menu_plat menu_plat--4">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Scallops</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">with mashed parsnip</p>
+                            <p class="menu_plat-price">40€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+                <li class="menu_plat menu_plat--5">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Magret de canard</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">with mashed potatoes</p>
+                            <p class="menu_plat-price">35€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+                <li class="menu_plat menu_plat--6">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Game Hen</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">with vegetable gnocchis</p>
+                            <p class="menu_plat-price">44€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+
+        <article class="menu_service">
+            <h3 class="menu_service-title">Desserts</h3>
+            <ul>
+                <li class="menu_plat menu_plat--7">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Floral Ice Cream</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">with hazelnut butter</p>
+                            <p class="menu_plat-price">18€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+                <li class="menu_plat menu_plat--8">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Chocoloate Lava Cake</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">Revisted</p>
+                            <p class="menu_plat-price">22€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+                <li class="menu_plat menu_plat--9">
+                    <article class="menu_plat-gauche">
+                        <h4 class="menu_plat-name">Napolean</h4>
+                        <div class="menu_plat-ligne-2">
+                            <p class="menu_plat-description">with blueberries and marzipan</p>
+                            <p class="menu_plat-price">23€</p>
+                        </div>
+                    </article>
+                    <div class="menu_plat-coche">
+                        <p class="menu_plat-logocoche"><img src="../images/icon/checkmark.svg" alt="logo de coche" /></p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <button class="button button-menu">Order</button>
+    </section>
+    <footer class="footer">
+        <!-- footer -->
+        <img src="../images/logo/ohmyfood-footer.svg" alt="logo ohmyfood" class="footer_logo" />
+        <p class="footer_p-bolder"><img src="../images/icon/couverts.svg" alt="logo de couverts" class="footer_icon" />
+            Suggest a restaurant</p>
+        <p class="footer_p-bolder"><img src="../images/icon/handshake.svg" alt="logo de serrage de mains"
+                class="footer_icon" /> Become a partner</p>
+        <p class="footer_p">Legal</p>
+        <p class="footer_p">Contact</p>
+    </footer>
 </body>
+
 </html>

@@ -11,127 +11,148 @@
     <link href="sass/style.css" rel="stylesheet" />
 </head>
 
-<body class="main">
-    <header class="header">
-        <p></p>
-        <!-- logo -->
-        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header_logo" />
-        <p></p>
-    </header>
+<body>
+    <div class="loader">
+        <div class="loader-roller">
+            <div class="loader-roller_circle loader-roller_circle--1"></div>
+            <div class="loader-roller_circle loader-roller_circle--2"></div>
+            <div class="loader-roller_circle loader-roller_circle--3"></div>
+            <div class="loader-roller_circle loader-roller_circle--4"></div>
+            <div class="loader-roller_circle loader-roller_circle--5"></div>
+            <div class="loader-roller_circle loader-roller_circle--6"></div>
+            <div class="loader-roller_circle loader-roller_circle--7"></div>
+            <div class="loader-roller_circle loader-roller_circle--8"></div>
+            <div class="loader-roller_circle loader-roller_circle--9"></div>
+        </div>
+    </div>
+    <div class="main">
+        <header class="header">
+            <p></p>
+            <!-- logo -->
+            <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header_logo" />
+            <p></p>
+        </header>
 
-    <section class="homepage">
-        <section class="homepage_loc">
-            <!-- localisation -->
-            <img src="images/icon/pin.svg" alt="logo de pin" />
-            <p>Paris, Belleville</p>
+        <section class="homepage">
+            <section class="homepage_loc">
+                <!-- localisation -->
+                <img src="images/icon/pin.svg" alt="logo de pin" />
+                <p>Paris, Belleville</p>
+            </section>
+            <section class="homepage_intro">
+                <!-- introduction -->
+                <h1>Book the menu you like</h1>
+                <p>Discover top-of-the-art restaurants we picked for you</p>
+                <button type="button" class="button"> Explore our restaurants</button>
+            </section>
         </section>
-        <section class="homepage_intro">
-            <!-- introduction -->
-            <h1>Book the menu you like</h1>
-            <p>Discover top-of-the-art restaurants we picked for you</p>
-            <button type="button" class="button"> Explore our restaurants</button>
+
+        <section class="explication">
+            <h2>How it works</h2>
+            <ol class="explication-list">
+                <li class="explication-list_ligne">
+                    <p class="explication_number">1</p><img src="images/icon/telephone.svg"
+                        alt="logo de téléphone" />Chose
+                    a restaurant
+                </li>
+                <li class="explication-list_ligne">
+                    <p class="explication_number">2</p><img src="images/icon/menu.svg" alt="logo de menu" />Create your
+                    menu
+                </li>
+                <li class="explication-list_ligne explication-list_ligne--last">
+                    <p class="explication_number">3</p><img src="images/icon/boutique.svg" alt="logo de boutique" />Go
+                    enjoy
+                    it at the restaurant
+                </li>
+
+            </ol>
         </section>
-    </section>
 
-    <section class="explication">
-        <h2>How it works</h2>
-        <ol class="explication-list">
-            <li class="explication-list_ligne">
-                <p class="explication_number">1</p><img src="images/icon/telephone.svg" alt="logo de téléphone" />Chose
-                a restaurant
-            </li>
-            <li class="explication-list_ligne">
-                <p class="explication_number">2</p><img src="images/icon/menu.svg" alt="logo de menu" />Create your menu
-            </li>
-            <li class="explication-list_ligne explication-list_ligne--last">
-                <p class="explication_number">3</p><img src="images/icon/boutique.svg" alt="logo de boutique" />Go enjoy
-                it at the restaurant
-            </li>
+        <section class="vignette">
+            <!-- menu -->
+            <h2>Restaurants</h2>
+            <section class="vignette-wrap">
+                <article class="vignette-restaurant">
+                    <a href="menu/the-full-palette.html"><img class="vignette-restaurant_photo"
+                            src="images/restaurants/the-full-palette-short.jpg"
+                            alt="photo restaurant The Full Palette" /></a>
+                    <p class="vignette-restaurant_new">New</p>
+                    <div class="vignette-restaurant_description">
+                        <div class="vignette-restaurant_description-left">
+                            <h3>The Full Palette</h3>
+                            <p>New York</p>
+                        </div>
+                        <div class="heart">
+                            <img src="images/icon/coeur.svg" alt="logo de coeur" />
+                            <div class="heart--select"><img src="images/icon/coeur-grad.svg"
+                                    alt="logo de coeur dégradé" /></div>
+                        </div>
+                    </div>
+                </article>
 
-        </ol>
-    </section>
+                <article class="vignette-restaurant">
+                    <a href="menu/the-enchanted-plate.html"><img class="vignette-restaurant_photo"
+                            src="images/restaurants/the-enchanted-plate-short.jpg"
+                            alt="photo restaurant The Enchanted Plate" /></a>
+                    <p class="vignette-restaurant_new">New</p>
+                    <div class="vignette-restaurant_description">
+                        <div class="vignette-restaurant_description-left">
+                            <h3>The Enchanted Plate</h3>
+                            <p>New York</p>
+                        </div>
+                        <div class="heart">
+                            <img src="images/icon/coeur.svg" alt="logo de coeur" />
+                            <div class="heart--select"><img src="images/icon/coeur-grad.svg"
+                                    alt="logo de coeur dégradé" /></div>
+                        </div>
+                    </div>
+                </article>
 
-    <section class="vignette">
-        <!-- menu -->
-        <h2>Restaurants</h2>
-        <section class="vignette-wrap">
-            <article class="vignette-restaurant">
-                <a href="menu/the-full-palette.html"><img class="vignette-restaurant_photo"
-                        src="images/restaurants/the-full-palette-short.jpg"
-                        alt="photo restaurant The Full Palette" /></a>
-                <p class="vignette-restaurant_new">New</p>
-                <div class="vignette-restaurant_description">
-                    <div class="vignette-restaurant_description-left">
-                        <h3>The Full Palette</h3>
-                        <p>New York</p>
+                <article class="vignette-restaurant">
+                    <a href="menu/bastille.html"><img class="vignette-restaurant_photo"
+                            src="images/restaurants/bastille-short.jpg" alt="photo restaurant Bastille" /></a>
+                    <div class="vignette-restaurant_description">
+                        <div class="vignette-restaurant_description-left">
+                            <h3>Bastille</h3>
+                            <p>New York</p>
+                        </div>
+                        <div class="heart">
+                            <img src="images/icon/coeur.svg" alt="logo de coeur" />
+                            <div class="heart--select"><img src="images/icon/coeur-grad.svg"
+                                    alt="logo de coeur dégradé" /></div>
+                        </div>
                     </div>
-                    <div class="heart">
-                        <img src="images/icon/coeur.svg" alt="logo de coeur" />
-                        <div class="heart--select"><img src="images/icon/coeur-grad.svg" alt="logo de coeur dégradé" /></div>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="vignette-restaurant">
-                <a href="menu/the-enchanted-plate.html"><img class="vignette-restaurant_photo"
-                        src="images/restaurants/the-enchanted-plate-short.jpg"
-                        alt="photo restaurant The Enchanted Plate" /></a>
-                <p class="vignette-restaurant_new">New</p>
-                <div class="vignette-restaurant_description">
-                    <div class="vignette-restaurant_description-left">
-                        <h3>The Enchanted Plate</h3>
-                        <p>New York</p>
+                <article class="vignette-restaurant">
+                    <a href="menu/le-gourmand.html"><img class="vignette-restaurant_photo"
+                            src="images/restaurants/le-gourmand-short.jpg" alt="photo restaurant Le Gourmand" /></a>
+                    <div class="vignette-restaurant_description">
+                        <div class="vignette-restaurant_description-left">
+                            <h3>Le Gourmand</h3>
+                            <p>New York</p>
+                        </div>
+                        <div class="heart">
+                            <img src="images/icon/coeur.svg" alt="logo de coeur" />
+                            <div class="heart--select"><img src="images/icon/coeur-grad.svg"
+                                    alt="logo de coeur dégradé" /></div>
+                        </div>
                     </div>
-                    <div class="heart">
-                        <img src="images/icon/coeur.svg" alt="logo de coeur" />
-                        <div class="heart--select"><img src="images/icon/coeur-grad.svg" alt="logo de coeur dégradé" /></div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="vignette-restaurant">
-                <a href="menu/bastille.html"><img class="vignette-restaurant_photo"
-                        src="images/restaurants/bastille-short.jpg" alt="photo restaurant Bastille" /></a>
-                <div class="vignette-restaurant_description">
-                    <div class="vignette-restaurant_description-left">
-                        <h3>Bastille</h3>
-                        <p>New York</p>
-                    </div>
-                    <div class="heart">
-                        <img src="images/icon/coeur.svg" alt="logo de coeur" />
-                        <div class="heart--select"><img src="images/icon/coeur-grad.svg" alt="logo de coeur dégradé" /></div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="vignette-restaurant">
-                <a href="menu/le-gourmand.html"><img class="vignette-restaurant_photo"
-                        src="images/restaurants/le-gourmand-short.jpg"
-                        alt="photo restaurant Le Gourmand" /></a>
-                <div class="vignette-restaurant_description">
-                    <div class="vignette-restaurant_description-left">
-                        <h3>Le Gourmand</h3>
-                        <p>New York</p>
-                    </div>
-                    <div class="heart">
-                        <img src="images/icon/coeur.svg" alt="logo de coeur" />
-                        <div class="heart--select"><img src="images/icon/coeur-grad.svg" alt="logo de coeur dégradé" /></div>
-                    </div>
-                </div>
-            </article>
+                </article>
+            </section>
         </section>
-    </section>
 
-    <footer class="footer">
-        <!-- footer -->
-        <img src="images/logo/ohmyfood-footer.svg" alt="logo ohmyfood" class="footer_logo" />
-        <p class="footer_p-bolder"><img src="images/icon/couverts.svg" alt="logo de couverts" class="footer_icon" />
-            Suggest a restaurant</p>
-        <p class="footer_p-bolder"><img src="images/icon/handshake.svg" alt="logo de serrage de mains"
-                class="footer_icon" /> Become a partner</p>
-        <p class="footer_p">Legal</p>
-        <p class="footer_p">Contact</p>
-    </footer>
+        <footer class="footer">
+            <!-- footer -->
+            <img src="images/logo/ohmyfood-footer.svg" alt="logo ohmyfood" class="footer_logo" />
+            <p class="footer_p-bolder"><img src="images/icon/couverts.svg" alt="logo de couverts" class="footer_icon" />
+                Suggest a restaurant</p>
+            <p class="footer_p-bolder"><img src="images/icon/handshake.svg" alt="logo de serrage de mains"
+                    class="footer_icon" /> Become a partner</p>
+            <p class="footer_p">Legal</p>
+            <p class="footer_p">Contact</p>
+        </footer>
+    </div>
 </body>
 
 </html>
