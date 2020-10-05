@@ -82,8 +82,12 @@
         justify-content: space-between;
     }
     &-description{
+        // width: 250px;
         font-weight: 300;
         font-size: 0.95rem;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
     }
     &-price{
         font-weight: 500;

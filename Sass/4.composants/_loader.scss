@@ -1,8 +1,5 @@
 /*Loader*/
 
-$num-loader:9;
-$animloader-delay:35ms;
-
 .loader{
     position: absolute;
     width: 100%;
@@ -10,39 +7,32 @@ $animloader-delay:35ms;
     background-color:  #f7f0ff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 40vh;
     z-index: 3;
-    animation: loader 1500ms ;
+    animation: loader 1s ;
     opacity: 0;
 }
 
 .loader-roller {
     display: inline-block;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     z-index: 4;
-    &_circle {
-      animation: loader-roller 2000ms  linear infinite;
-      transform-origin: 50px 50px;
-      @for $n from 1 through $num-loader{
-        &--#{$n} {
-            animation-delay: $animloader-delay * $n;
-            &:after{
-            transform: rotate($n*46deg) translateY(50px);
-            transform-origin: 50px 50px;
-            content: " ";
-            display: block;
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border-radius: 5rem;
-            background: $secondaire;
-            }
-        }
-      }
+    &:after{
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      border:6px solid $secondaire;
+      border-color: $secondaire transparent $secondaire transparent;
+      animation: loader-roller 1.25s linear infinite;
     }
   }
+
   @keyframes loader-roller {
     0% {
       transform: rotate(0deg);
@@ -56,10 +46,13 @@ $animloader-delay:35ms;
     0%{
       opacity: 100%;
     }
-    80%{
+    70%{
       opacity: 100%;
     }
-    100%{
+    99%{
       opacity: 0%;
+    }
+    100%{
+      display: none;
     }
   }
