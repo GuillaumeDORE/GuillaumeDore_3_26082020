@@ -10,7 +10,7 @@
     align-items: flex-start;
     padding-top: 40vh;
     z-index: 3;
-    animation: loader 1s ;
+    animation: loader 1s forwards;
     opacity: 0;
 }
 
@@ -53,6 +53,7 @@
       opacity: 0%;
     }
     100%{
-      display: none;
+      opacity: hidden;
+      visibility: hidden;
     }
   }
