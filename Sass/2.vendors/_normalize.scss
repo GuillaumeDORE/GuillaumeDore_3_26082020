@@ -85,7 +85,6 @@
   abbr[title] {
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
   }
   
   /**
@@ -395,7 +394,6 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
 	content: none;
 }
 table {

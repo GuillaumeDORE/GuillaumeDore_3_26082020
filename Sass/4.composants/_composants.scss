@@ -65,8 +65,6 @@
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
-    // line-break: strict;
-    // text-overflow: ellipsis;--------------je n'arrive pas a faire les pointillés
     
     &-gauche{
         width: 100%;
@@ -82,12 +80,8 @@
         justify-content: space-between;
     }
     &-description{
-        // width: 250px;
         font-weight: 300;
         font-size: 0.95rem;
-        // white-space: nowrap;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
     }
     &-price{
         font-weight: 500;
