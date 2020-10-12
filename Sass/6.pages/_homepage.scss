@@ -50,13 +50,12 @@
             border-radius: 1rem;
             box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: row;
             align-items: center;
             & img {
                 padding: 0 1rem 0 0;
             }
             &--last {
-                background-color: #f5edff;
+                background-color: #f5edff; 
                 & img {
                     width: 1.5rem;
                 }

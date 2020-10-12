@@ -629,7 +629,6 @@ table {
     opacity: 0%;
   }
   100% {
-    opacity: hidden;
     visibility: hidden;
   }
 }
@@ -729,7 +728,6 @@ table {
   border-radius: 1rem;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: row;
   align-items: center;
 }
 
